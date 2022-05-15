@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - fence
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 4002817653
+    locked: 0
+  - name: House
+    uniqueID: 2198663833
+    locked: 0
+  - name: fence
+    uniqueID: 1126355173
+    locked: 0
+  - name: Animal
+    uniqueID: 2704624981
+    locked: 0
+  - name: Character
+    uniqueID: 4230642365
+    locked: 0
+  - name: Clothes
+    uniqueID: 2429162417
     locked: 0

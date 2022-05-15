@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 407fa6a46f1ca79499d756ea0ab99f36
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1078825313623574538
+    second: cow_black animation_14
+  - first:
+      213: 369921050564241649
+    second: cow_black animation_15
+  - first:
+      213: -8084576653720501778
+    second: cow_black animation_16
+  - first:
+      213: -7910225459104953664
+    second: cow_black animation_17
+  - first:
+      213: -8645488667950708070
+    second: cow_black animation_18
+  - first:
+      213: 7123155381538816801
+    second: cow_black animation_19
+  - first:
+      213: -5489308698005224061
+    second: cow_black animation_20
+  - first:
+      213: 6983650468324658424
+    second: cow_black animation_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -24,7 +48,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -118,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6833d0a53d14a3a4c902262bf29e00f7
-      internalID: 29269646
+      spriteID: e5f48261c7014ccf0800000000000000
+      internalID: -233043155582693538
       vertices: []
       indices: 
       edges: []
@@ -139,8 +162,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0207f67d0f18ce5479f68f0f4db43775
-      internalID: 1109894031
+      spriteID: 9c581c0d9ba6cddb0800000000000000
+      internalID: -4765816959360989751
       vertices: []
       indices: 
       edges: []
@@ -160,8 +183,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ff00e02f3621aa428048e2d164b1c86
-      internalID: 663116889
+      spriteID: 6c451e90ddc479630800000000000000
+      internalID: 3933697311768663238
       vertices: []
       indices: 
       edges: []
@@ -181,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988759f0cc84f414e8307efa4c3a4b97
-      internalID: -2142813909
+      spriteID: 5a79c2e1587b9a300800000000000000
+      internalID: 263943835542656933
       vertices: []
       indices: 
       edges: []
@@ -202,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac006aaaa4039f47a0b485045aeadda
-      internalID: -55363120
+      spriteID: 4b027228edaf74e50800000000000000
+      internalID: 6793674396484968628
       vertices: []
       indices: 
       edges: []
@@ -223,8 +246,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e20d75c62e83da8449e7f55c18859550
-      internalID: 1018453105
+      spriteID: eb07b154d3c1de250800000000000000
+      internalID: 5975463330068525246
       vertices: []
       indices: 
       edges: []
@@ -244,8 +267,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a29df5f3ac3ac449c205752761f5f3
-      internalID: -2076574419
+      spriteID: 1a8e75f04251c11d0800000000000000
+      internalID: -3378802375814289247
       vertices: []
       indices: 
       edges: []
@@ -265,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9edb42424754de745b90135d8eef2d2f
-      internalID: 312047696
+      spriteID: 8d3450b9797855860800000000000000
+      internalID: 7518064238175536088
       vertices: []
       indices: 
       edges: []
@@ -286,8 +309,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a8fbcccf9dab247a37b083de431823
-      internalID: -1436787337
+      spriteID: f8ad4128939168de0800000000000000
+      internalID: -1331348905055167857
       vertices: []
       indices: 
       edges: []
@@ -307,8 +330,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceb95b0d0b80aa94abc32c2d0a33dfce
-      internalID: 1407933582
+      spriteID: 52ac579d5e9269850800000000000000
+      internalID: 6383335589016881701
       vertices: []
       indices: 
       edges: []
@@ -328,8 +351,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ad1ee12250ac174b9cd1bc293aa006d
-      internalID: -358705423
+      spriteID: 5c10d0cd2d1e0c4c0800000000000000
+      internalID: -4269164150996008507
       vertices: []
       indices: 
       edges: []
@@ -349,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f3cd5067b17073449d6308b588d4b92
-      internalID: -106815610
+      spriteID: e610fa980adeabbe0800000000000000
+      internalID: -1460593855367806610
       vertices: []
       indices: 
       edges: []
@@ -370,8 +393,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9513ecba6c7645e46a23b35ba927c3eb
-      internalID: -2041723433
+      spriteID: 2ddace59da2d06ec0800000000000000
+      internalID: -3575626461145682478
       vertices: []
       indices: 
       edges: []
@@ -391,8 +414,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e1bdf4ecf39ee34182cdef0fe9cb064
-      internalID: -13017237
+      spriteID: cc1d97628f73c8890800000000000000
+      internalID: -7454521744268078644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f774c6d71e3701f0800000000000000
+      internalID: -1078825313623574538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f822dd4c39322500800000000000000
+      internalID: 369921050564241649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1c29b0e50ddcf80800000000000000
+      internalID: -8084576653720501778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca4cc8eadb393290800000000000000
+      internalID: -7910225459104953664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a022dbcdd050880800000000000000
+      internalID: -8645488667950708070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123888454188ad260800000000000000
+      internalID: 7123155381538816801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385cfe0a2de02d3b0800000000000000
+      internalID: -5489308698005224061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow_black animation_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc4bf79919eae060800000000000000
+      internalID: 6983650468324658424
       vertices: []
       indices: 
       edges: []
@@ -407,21 +598,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      cow_black animation_0: 29269646
-      cow_black animation_7: 312047696
-      cow_black animation_2: 663116889
-      cow_black animation_3: -2142813909
-      cow_black animation_13: -13017237
-      cow_black animation_12: -2041723433
-      cow_black animation_10: -358705423
-      cow_black animation_8: -1436787337
-      cow_black animation_4: -55363120
-      cow_black animation_5: 1018453105
-      cow_black animation_6: -2076574419
-      cow_black animation_1: 1109894031
-      cow_black animation_11: -106815610
-      cow_black animation_9: 1407933582
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
