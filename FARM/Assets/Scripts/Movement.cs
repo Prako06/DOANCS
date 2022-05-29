@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
         Vector3 direction = new Vector3(horizontal, vertical);
         AnimateMovement(direction);
 
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += direction * speed * Time.deltaTime;    
     }
 
     void AnimateMovement(Vector3 direction)
