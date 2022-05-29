@@ -71,6 +71,7 @@ public class ToolsCharacterController : MonoBehaviour
             {
                 if (item.onItemUsed != null)
                 {
+                    animator.ResetTrigger("act");
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
                 }
             }
