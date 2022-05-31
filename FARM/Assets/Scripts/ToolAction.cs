@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToolAction : ScriptableObject
 {
-    public virtual bool OnApplyToTileMap(Vector3Int gridPosition, TileMapController tileMapController)
+    public virtual bool OnApplyToTileMap(Vector3Int gridPosition, TileMapController tileMapController, Item item)
     {
         Debug.LogWarning("OnApplyToTileMap is not implemented");
         return true;

@@ -57,16 +57,16 @@ public class ToolsCharacterController : MonoBehaviour
     }
 
     private void UseToolGrid()
-    {
-        if(selectable == true)
+    {       
+        if (selectable == true)
         {
             Item item = toolbarController.GetItem;
             if (item == null) { return; }
             if (item.onTileMapAction == null) { return; }
 
             animator.SetTrigger("act");
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, TileMapController);
-
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, TileMapController, item);
+            
             if (complete == true)
             {
                 if (item.onItemUsed != null)
@@ -75,6 +75,12 @@ public class ToolsCharacterController : MonoBehaviour
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
                 }
             }
-        }
+            else
+            {
+                animator.ResetTrigger("act");
+                Debug.Log("Can't not plow");
+            }
+
+        }       
     }
 }

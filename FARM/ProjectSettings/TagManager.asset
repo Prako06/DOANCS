@@ -49,6 +49,9 @@ TagManager:
   - name: Growing
     uniqueID: 622882501
     locked: 0
+  - name: fence
+    uniqueID: 1126355173
+    locked: 0
   - name: seed
     uniqueID: 592941081
     locked: 0
@@ -57,9 +60,6 @@ TagManager:
     locked: 0
   - name: House
     uniqueID: 2198663833
-    locked: 0
-  - name: fence
-    uniqueID: 1126355173
     locked: 0
   - name: Animal
     uniqueID: 2704624981

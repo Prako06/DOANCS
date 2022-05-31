@@ -10,4 +10,5 @@ public class Item : ScriptableObject
     public Sprite icon;
     public ToolAction onTileMapAction;
     public ToolAction onItemUsed;
+    public Crop crop;
 }
