@@ -6,13 +6,16 @@ using UnityEngine.Tilemaps;
 
 public class ToolsCharacterController : MonoBehaviour
 {
-    CharacterController character;
+    Movement character;
     Rigidbody2D rb;
     ToolBarController toolbarController;
     Animator animator;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapController TileMapController;
     [SerializeField] float maxDistance = 1.5f;
+    [SerializeField] ToolAction onTilePickUp;
+    [SerializeField] Item item;
+    public int count = 1;
     
 
     Vector3Int selectedTilePosition;
@@ -20,7 +23,7 @@ public class ToolsCharacterController : MonoBehaviour
 
     private void Awake()
     {
-        character = GetComponent<CharacterController>();
+        character = GetComponent<Movement>();
         rb = GetComponent<Rigidbody2D>();
         toolbarController = GetComponent<ToolBarController>();
         animator = GetComponent<Animator>();
@@ -61,7 +64,10 @@ public class ToolsCharacterController : MonoBehaviour
         if (selectable == true)
         {
             Item item = toolbarController.GetItem;
-            if (item == null) { return; }
+            if (item == null) {
+                PickUpTile();               
+                return;               
+            }
             if (item.onTileMapAction == null) { return; }
 
             animator.SetTrigger("act");
@@ -82,5 +88,20 @@ public class ToolsCharacterController : MonoBehaviour
             }
 
         }       
+    }
+
+    private void PickUpTile()
+    {
+        if (onTilePickUp == null) { return; }
+
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, TileMapController, null);
+        if (GameManager.instance.inventoryContainer != null)
+        {
+            GameManager.instance.inventoryContainer.Add(item, count);
+        }
+        else
+        {
+            Debug.LogWarning("NOOO");
+        }
     }
 }

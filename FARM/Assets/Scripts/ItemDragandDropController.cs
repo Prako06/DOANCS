@@ -31,9 +31,8 @@ public class ItemDragandDropController : MonoBehaviour
                 {
                     Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     worldPosition.z = 0;
+
                     ItemSpawnManager.instance.SpawnItem(worldPosition, itemSlot.item, itemSlot.count);
-                    itemSlot.Clear();
-                    itemIcon.SetActive(false);
                 }
             }           
         }

@@ -15,3 +15,7 @@ MonoBehaviour:
   Name: Carrot
   stackable: 1
   icon: {fileID: 6761164967045977113, guid: 8e7fef7bd82b6a94eaf20db72583a185, type: 3}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  onItemAdd: {fileID: 11400000, guid: 6184257cd6738a44f84c98c746c04f65, type: 2}
+  crop: {fileID: 0}

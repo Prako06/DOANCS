@@ -55,4 +55,29 @@ public class ItemContainer : ScriptableObject
             }
         }
     }
+
+    public void Add(Item itemToAdd, int count = 1)
+    {
+        if (itemToAdd.stackable == true)
+        {
+            ItemSlot itemSlot = slots.Find(x => x.item == itemToAdd);
+            if(itemSlot != null)
+            {
+                itemSlot.count += count;
+            }
+            else
+            {
+                itemSlot = slots.Find(x => x.item == null);
+                if (itemSlot != null)
+                {
+                    itemSlot.item = itemToAdd;
+                    itemSlot.count = count;
+                }
+            }
+        }
+        else
+        {
+            ItemSlot itemSlot = slots.Find(x => x.item == null);
+        }
+    }
 }

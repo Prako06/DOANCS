@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    Rigidbody2D rb;
+    Animator anim;
     public float speed;
-    public Animator animator;
     // Update is called once per frame
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -20,18 +28,18 @@ public class Movement : MonoBehaviour
 
     void AnimateMovement(Vector3 direction)
     {
-        if(animator != null)
+        if(anim != null)
         {
             if(direction.magnitude > 0)
             {
-                animator.SetBool("IsMoving", true);
+                anim.SetBool("IsMoving", true);
 
-                animator.SetFloat("horizontal", direction.x);
-                animator.SetFloat("vertical", direction.y);
+                anim.SetFloat("horizontal", direction.x);
+                anim.SetFloat("vertical", direction.y);
             }
             else
             {
-                animator.SetBool("IsMoving", false);
+                anim.SetBool("IsMoving", false);
             }
         }
     }

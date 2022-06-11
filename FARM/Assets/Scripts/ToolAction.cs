@@ -14,4 +14,9 @@ public class ToolAction : ScriptableObject
     {
 
     }
+
+    public virtual void OnItemAdd(Item addItem , ItemContainer inventory)
+    {
+
+    }
 }
