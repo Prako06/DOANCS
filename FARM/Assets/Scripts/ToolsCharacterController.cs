@@ -13,9 +13,7 @@ public class ToolsCharacterController : MonoBehaviour
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapController TileMapController;
     [SerializeField] float maxDistance = 1.5f;
-    [SerializeField] ToolAction onTilePickUp;
-    [SerializeField] Item item;
-    public int count = 1;
+    [SerializeField] ToolAction onTilePickUp;  
     
 
     Vector3Int selectedTilePosition;
@@ -94,14 +92,6 @@ public class ToolsCharacterController : MonoBehaviour
     {
         if (onTilePickUp == null) { return; }
 
-        onTilePickUp.OnApplyToTileMap(selectedTilePosition, TileMapController, null);
-        if (GameManager.instance.inventoryContainer != null)
-        {
-            GameManager.instance.inventoryContainer.Add(item, count);
-        }
-        else
-        {
-            Debug.LogWarning("NOOO");
-        }
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, TileMapController, null);      
     }
 }

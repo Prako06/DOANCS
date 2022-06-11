@@ -37,6 +37,8 @@ public class CropsManager : TimeAgent
 
     [SerializeField] Tilemap targetTilemap;
     [SerializeField] GameObject cropsSpritePrefab;
+    [SerializeField] Item item;
+    public int count = 1;
 
     Dictionary<Vector2Int, CropTile> crops;
     
@@ -116,7 +118,14 @@ public class CropsManager : TimeAgent
         if (cropTile.Complete)
         {
             Debug.Log("Clicking");
-
+            if (GameManager.instance.inventoryContainer != null)
+            {
+                GameManager.instance.inventoryContainer.Add(item, count);
+            }
+            else
+            {
+                Debug.LogWarning("NOOO");
+            }
             cropTile.Harvested();
             targetTilemap.SetTile(gridPosition, null);
         }
