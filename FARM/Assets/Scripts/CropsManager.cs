@@ -122,10 +122,6 @@ public class CropsManager : TimeAgent
             {
                 GameManager.instance.inventoryContainer.Add(item, count);
             }
-            else
-            {
-                Debug.LogWarning("NOOO");
-            }
             cropTile.Harvested();
             targetTilemap.SetTile(gridPosition, null);
         }
