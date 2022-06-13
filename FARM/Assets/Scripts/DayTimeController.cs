@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
+using TMPro;
 
 public class DayTimeController : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] float timeScale = 60f;
     [SerializeField] float startAtTime = 28800f;
 
-    [SerializeField] Text text;
+    [SerializeField] TextMeshProUGUI hours;
+    [SerializeField] TextMeshProUGUI minutes;
     [SerializeField] Light2D globalLight;  
     private int days;
 
@@ -75,7 +77,8 @@ public class DayTimeController : MonoBehaviour
     {
         int hh = (int)Hours;
         int mm = (int)Minutes;
-        text.text = hh.ToString("00") + ":" + mm.ToString("00"); ;
+        hours.text = hh.ToString("00");
+        minutes.text = mm.ToString("00");
     }
 
     int oldPhase = 0;
