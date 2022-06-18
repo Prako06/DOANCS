@@ -9,7 +9,8 @@ public class ToolsCharacterController : MonoBehaviour
     Movement character;
     Rigidbody2D rb;
     ToolBarController toolbarController;
-    Animator animator;
+    [SerializeField] Animator animator;
+    [SerializeField] Animator clothes;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapController TileMapController;
     [SerializeField] float maxDistance = 1.5f;
@@ -69,6 +70,7 @@ public class ToolsCharacterController : MonoBehaviour
             if (item.onTileMapAction == null) { return; }
 
             animator.SetTrigger("act");
+            clothes.SetTrigger("act");
             bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, TileMapController, item);
             
             if (complete == true)
@@ -76,12 +78,14 @@ public class ToolsCharacterController : MonoBehaviour
                 if (item.onItemUsed != null)
                 {
                     animator.ResetTrigger("act");
+                    clothes.ResetTrigger("act");
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
                 }
             }
             else
             {
                 animator.ResetTrigger("act");
+                clothes.ResetTrigger("act");
                 Debug.Log("Can't not plow");
             }
 

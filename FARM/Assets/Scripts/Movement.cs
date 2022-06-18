@@ -5,7 +5,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
-    Animator anim;
+    [SerializeField] Animator anim;
+    [SerializeField] Animator clothes;
+    [SerializeField] Animator hair;
     public float speed;
     // Update is called once per frame
 
@@ -34,12 +36,26 @@ public class Movement : MonoBehaviour
             {
                 anim.SetBool("IsMoving", true);
 
+                clothes.SetBool("IsMoving", true);
+                
+                hair.SetBool("IsMoving", true);
+
                 anim.SetFloat("horizontal", direction.x);
                 anim.SetFloat("vertical", direction.y);
+                
+                clothes.SetFloat("horizontal", direction.x);
+                clothes.SetFloat("vertical", direction.y);
+
+                hair.SetFloat("horizontal", direction.x);
+                hair.SetFloat("vertical", direction.y);
             }
             else
             {
                 anim.SetBool("IsMoving", false);
+                
+                clothes.SetBool("IsMoving", false);
+
+                hair.SetBool("IsMoving", false);
             }
         }
     }
